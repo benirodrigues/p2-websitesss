@@ -1,0 +1,153 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fdf6e3;
+    color: #333;
+  }
+  
+  /* Header */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff8c00;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    color: #f0d22c;
+  }
+  
+  .theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .theme-toggle:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Banner */
+  .banner {
+    position: relative;
+    text-align: center;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .banner-overlay h1 {
+    font-size: 2.5rem;
+  }
+  
+  .banner-overlay p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Episodes */
+  .episodes {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .episode-card {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .episode-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .episode-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .episode-card p {
+    padding: 0 10px;
+  }
+  
+  .episode-card button {
+    margin: 10px;
+    padding: 10px 15px;
+    background: #ff8c00;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .episode-card button:hover {
+    background: #cc6e00;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  /* Tema Escuro */
+  body.dark-theme {
+    background-color: #2c2c2c;
+    color: #ddd;
+  }
+  
+  body.dark-theme .main-header {
+    background: #444;
+  }
+  
+  body.dark-theme .episodes {
+    background: #3c3c3c;
+  }
+  
